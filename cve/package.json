@@ -1,0 +1,11 @@
+{
+  "name": "cve-dependency-labs",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node CVE-2024-47068/reproduce-rollup-dom-clobbering.js && node CVE-2026-33937/reproduce-handlebars-ast-confusion.js && node CVE-2026-39364/reproduce-vite-fs-deny-bypass.js",
+    "cve:rollup": "node CVE-2024-47068/reproduce-rollup-dom-clobbering.js",
+    "cve:handlebars": "node CVE-2026-33937/reproduce-handlebars-ast-confusion.js",
+    "cve:vite": "node CVE-2026-39364/reproduce-vite-fs-deny-bypass.js"
+  }
+}
