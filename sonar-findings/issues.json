@@ -1,0 +1,3077 @@
+{
+  "total": 67,
+  "fetched": 67,
+  "issues": [
+    {
+      "key": "AZ3i2m3ns6Hfl3oGVcxY",
+      "rule": "jssecurity:S8476",
+      "severity": "MINOR",
+      "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+      "project": "d2v6_Ghost",
+      "line": 35,
+      "hash": "dbab6cc4bc31da7efeb3a4b5483b27dd",
+      "textRange": {
+        "startLine": 35,
+        "endLine": 35,
+        "startOffset": 19,
+        "endOffset": 24
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 19,
+                "endOffset": 24
+              },
+              "msg": "Sink: this invocation is not safe; a malicious value can be used as argument"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 25,
+                "endOffset": 62
+              },
+              "msg": "This concatenation can propagate malicious content to the newly created string"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 28,
+                "endOffset": 36
+              },
+              "msg": "A malicious value was previously assigned to field ‘adminUrl’"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 68,
+                "endLine": 68,
+                "startOffset": 26,
+                "endOffset": 33
+              },
+              "msg": "Function call: Control is passed to this function, which is on the path to a security sink"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 6,
+                "endOffset": 14
+              },
+              "msg": "A malicious value can be assigned to field ‘adminUrl’"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 17,
+                "endOffset": 78
+              },
+              "msg": "This concatenation can propagate malicious content to the newly created string"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 33,
+                "endOffset": 37
+              },
+              "msg": "Source: a user can craft an HTTP request with malicious content"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Ensure that tainted data is validated before being used to construct a client-side request URL.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "rob@ghost.org",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-05-01T09:18:26+0000",
+      "updateDate": "2026-05-01T09:18:26+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "659695df-fec0-480b-93f2-402d5c35efd9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1cun5d3KDogvc6zN",
+      "rule": "jssecurity:S8476",
+      "severity": "MINOR",
+      "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+      "project": "d2v6_Ghost",
+      "line": 34,
+      "hash": "4dcc6a336f5b607c0acc9d4473ce41ab",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 22,
+        "endOffset": 27
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 22,
+                "endOffset": 27
+              },
+              "msg": "Sink: this invocation is not safe; a malicious value can be used as argument"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 28,
+                "endOffset": 85
+              },
+              "msg": "This concatenation can propagate malicious content to the newly created string"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 34,
+                "endLine": 34,
+                "startOffset": 31,
+                "endOffset": 39
+              },
+              "msg": "A malicious value was previously assigned to field ‘adminUrl’"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 68,
+                "endLine": 68,
+                "startOffset": 26,
+                "endOffset": 33
+              },
+              "msg": "Function call: Control is passed to this function, which is on the path to a security sink"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 6,
+                "endOffset": 14
+              },
+              "msg": "A malicious value can be assigned to field ‘adminUrl’"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 17,
+                "endOffset": 78
+              },
+              "msg": "This concatenation can propagate malicious content to the newly created string"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/src/admin-auth/message-handler.js",
+              "textRange": {
+                "startLine": 1,
+                "endLine": 1,
+                "startOffset": 33,
+                "endOffset": 37
+              },
+              "msg": "Source: a user can craft an HTTP request with malicious content"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Ensure that tainted data is validated before being used to construct a client-side request URL.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "rob@ghost.org",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-04-27T14:10:21+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dVp5d3KDogvc7F2",
+      "rule": "typescript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/unit/server/services/verification/verification-webhook-service.test.ts",
+      "project": "d2v6_Ghost",
+      "line": 112,
+      "hash": "a3f3e494da7a97c74e25c5757e9a1803",
+      "textRange": {
+        "startLine": 112,
+        "endLine": 113,
+        "startOffset": 34,
+        "endOffset": 23
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/test/unit/server/services/verification/verification-webhook-service.test.ts",
+              "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 26,
+                "endOffset": 45
+              },
+              "msg": "Hardcoded value assigned here"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "aileen@ghost.org",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-03-24T09:24:20+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1bGB5d3KDogvc6Wh",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/core/core/server/services/koenig/node-renderers/transistor-renderer.js",
+      "project": "d2v6_Ghost",
+      "line": 160,
+      "hash": "edc5246e43d339f87aa1a922c19b3541",
+      "textRange": {
+        "startLine": 160,
+        "endLine": 160,
+        "startOffset": 8,
+        "endOffset": 31
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Verify the origin of the received message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2026-03-13T19:21:40+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1h7X5d3KDogvc853",
+      "rule": "typescript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:e2e/visual-regression/auth.setup.ts",
+      "project": "d2v6_Ghost",
+      "line": 16,
+      "hash": "4e0f0f0b0ee7fec25d66a0661b0b4313",
+      "textRange": {
+        "startLine": 16,
+        "endLine": 16,
+        "startOffset": 21,
+        "endOffset": 70
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "zimo@ghost.org",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-03-11T16:14:16+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_F",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 66,
+      "hash": "b625d860214116bd18dd058eadc1da67",
+      "textRange": {
+        "startLine": 66,
+        "endLine": 66,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "hello@samlord.me",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-02-25T18:39:16+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_G",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 67,
+      "hash": "a7afeb892a8eab112c16ff8c5a71596e",
+      "textRange": {
+        "startLine": 67,
+        "endLine": 67,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "hello@samlord.me",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2026-02-25T18:39:16+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1gAq5d3KDogvc8MM",
+      "rule": "typescript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:apps/admin/src/layout/app-sidebar/hooks/use-featurebase.ts",
+      "project": "d2v6_Ghost",
+      "line": 126,
+      "hash": "58f53ad1969a093bd0cb2b2c1f0ea1c9",
+      "textRange": {
+        "startLine": 126,
+        "endLine": 126,
+        "startOffset": 12,
+        "endOffset": 30
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "kevin@ghost.org",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2026-01-14T15:27:21+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eg95d3KDogvc7me",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/services/billing.js",
+      "project": "d2v6_Ghost",
+      "line": 105,
+      "hash": "3dfbe2899e8e4df1de5053c33227ce20",
+      "textRange": {
+        "startLine": 105,
+        "endLine": 105,
+        "startOffset": 8,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "aileencgn@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2025-09-29T14:30:56+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Ty",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 716,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 716,
+        "endLine": 716,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "42299862+cathysarisky@users.noreply.github.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2025-03-12T15:10:40+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_B",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 12,
+      "hash": "b625d860214116bd18dd058eadc1da67",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_C",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 13,
+      "hash": "a7afeb892a8eab112c16ff8c5a71596e",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_D",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 50,
+      "hash": "f8680c9fbf7698f695abdb782fd5f9fc",
+      "textRange": {
+        "startLine": 50,
+        "endLine": 50,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_E",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 51,
+      "hash": "5ab8ff8a107de9b2bfe3c83867c21bbf",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_H",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 102,
+      "hash": "31e7c9c740a44b8b565d7665036f09dd",
+      "textRange": {
+        "startLine": 102,
+        "endLine": 102,
+        "startOffset": 26,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_I",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 137,
+      "hash": "b625d860214116bd18dd058eadc1da67",
+      "textRange": {
+        "startLine": 137,
+        "endLine": 137,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_J",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 138,
+      "hash": "a7afeb892a8eab112c16ff8c5a71596e",
+      "textRange": {
+        "startLine": 138,
+        "endLine": 138,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_K",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 169,
+      "hash": "b625d860214116bd18dd058eadc1da67",
+      "textRange": {
+        "startLine": 169,
+        "endLine": 169,
+        "startOffset": 33,
+        "endOffset": 49
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fhY5d3KDogvc7_L",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/admin/tests/unit/controllers/reset-test.js",
+      "project": "d2v6_Ghost",
+      "line": 170,
+      "hash": "5f0c7e39d75437d20b257e8590ba9766",
+      "textRange": {
+        "startLine": 170,
+        "endLine": 170,
+        "startOffset": 33,
+        "endOffset": 52
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-12T07:47:15+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1aOa5d3KDogvc6Jn",
+      "rule": "javascript:S2612",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/core/server/data/importer/import-manager.js",
+      "project": "d2v6_Ghost",
+      "line": 229,
+      "hash": "5babc9ebc0dd2a119eb9e26131290719",
+      "textRange": {
+        "startLine": 229,
+        "endLine": 229,
+        "startOffset": 82,
+        "endOffset": 87
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure this permission is safe.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "vershwal.princi@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-12-10T07:11:48+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hBX5d3KDogvc8dQ",
+      "rule": "typescript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:apps/comments-ui/test/utils/e2e.ts",
+      "project": "d2v6_Ghost",
+      "line": 34,
+      "hash": "d7fc0d400b0380993611d7e78592adbc",
+      "textRange": {
+        "startLine": 34,
+        "endLine": 34,
+        "startOffset": 4,
+        "endOffset": 27
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Verify the origin of the received message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "kevin@lookingsideways.co.uk",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2024-11-26T14:30:23+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dNp5d3KDogvc7DJ",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/unit/server/services/settings-helpers/settings-helpers.test.js",
+      "project": "d2v6_Ghost",
+      "line": 120,
+      "hash": "f126a508ec1341eb510a742941f1f1a6",
+      "textRange": {
+        "startLine": 120,
+        "endLine": 120,
+        "startOffset": 31,
+        "endOffset": 48
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/test/unit/server/services/settings-helpers/settings-helpers.test.js",
+              "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 26,
+                "endOffset": 42
+              },
+              "msg": "Hardcoded value assigned here"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-10-16T19:00:31+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1d_n5d3KDogvc7fD",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-api/members/feedback.test.js",
+      "project": "d2v6_Ghost",
+      "line": 21,
+      "hash": "d6cc704e1acb696362bdbe6832cc414e",
+      "textRange": {
+        "startLine": 21,
+        "endLine": 21,
+        "startOffset": 21,
+        "endOffset": 38
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/test/e2e-api/members/feedback.test.js",
+              "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 33,
+                "endOffset": 52
+              },
+              "msg": "Hardcoded value assigned here"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eAE5d3KDogvc7fH",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-api/members/middleware.test.js",
+      "project": "d2v6_Ghost",
+      "line": 67,
+      "hash": "dbd828b592a464a2c633451468a0a2c0",
+      "textRange": {
+        "startLine": 67,
+        "endLine": 67,
+        "startOffset": 25,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eAE5d3KDogvc7fI",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-api/members/middleware.test.js",
+      "project": "d2v6_Ghost",
+      "line": 189,
+      "hash": "dbd828b592a464a2c633451468a0a2c0",
+      "textRange": {
+        "startLine": 189,
+        "endLine": 189,
+        "startOffset": 25,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eLm5d3KDogvc7in",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-frontend/members.test.js",
+      "project": "d2v6_Ghost",
+      "line": 250,
+      "hash": "5abbfb3feaae226b734ed44d61eff87f",
+      "textRange": {
+        "startLine": 250,
+        "endLine": 250,
+        "startOffset": 35,
+        "endOffset": 52
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eLm5d3KDogvc7io",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-frontend/members.test.js",
+      "project": "d2v6_Ghost",
+      "line": 368,
+      "hash": "7550183c74d8a87d85d8a216704465a3",
+      "textRange": {
+        "startLine": 368,
+        "endLine": 368,
+        "startOffset": 31,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eLm5d3KDogvc7ip",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-frontend/members.test.js",
+      "project": "d2v6_Ghost",
+      "line": 387,
+      "hash": "5abbfb3feaae226b734ed44d61eff87f",
+      "textRange": {
+        "startLine": 387,
+        "endLine": 387,
+        "startOffset": 31,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eLm5d3KDogvc7iq",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-frontend/members.test.js",
+      "project": "d2v6_Ghost",
+      "line": 422,
+      "hash": "5abbfb3feaae226b734ed44d61eff87f",
+      "textRange": {
+        "startLine": 422,
+        "endLine": 422,
+        "startOffset": 31,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eLm5d3KDogvc7ir",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-frontend/members.test.js",
+      "project": "d2v6_Ghost",
+      "line": 455,
+      "hash": "5abbfb3feaae226b734ed44d61eff87f",
+      "textRange": {
+        "startLine": 455,
+        "endLine": 455,
+        "startOffset": 31,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eLm5d3KDogvc7is",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-frontend/members.test.js",
+      "project": "d2v6_Ghost",
+      "line": 483,
+      "hash": "5abbfb3feaae226b734ed44d61eff87f",
+      "textRange": {
+        "startLine": 483,
+        "endLine": 483,
+        "startOffset": 31,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eLm5d3KDogvc7it",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/e2e-frontend/members.test.js",
+      "project": "d2v6_Ghost",
+      "line": 516,
+      "hash": "5abbfb3feaae226b734ed44d61eff87f",
+      "textRange": {
+        "startLine": 516,
+        "endLine": 516,
+        "startOffset": 31,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "9larsons@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-08-20T14:24:02+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dPz5d3KDogvc7Dg",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/unit/server/services/webhooks/trigger.test.js",
+      "project": "d2v6_Ghost",
+      "line": 205,
+      "hash": "f9063542099a90b89aeb0debb77d8ce6",
+      "textRange": {
+        "startLine": 205,
+        "endLine": 205,
+        "startOffset": 45,
+        "endOffset": 62
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/test/unit/server/services/webhooks/trigger.test.js",
+              "textRange": {
+                "startLine": 16,
+                "endLine": 16,
+                "startOffset": 27,
+                "endOffset": 46
+              },
+              "msg": "Hardcoded value assigned here"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "mike@ghost.org",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2024-07-01T14:59:04+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hXk5d3KDogvc8qR",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:apps/portal/src/components/popup-modal.js",
+      "project": "d2v6_Ghost",
+      "line": 141,
+      "hash": "935483301e5737e8c3cc049fb74b2831",
+      "textRange": {
+        "startLine": 141,
+        "endLine": 141,
+        "startOffset": 12,
+        "endOffset": 37
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "hi@ronaldlangeveld.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2024-01-23T12:31:08+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "659695df-fec0-480b-93f2-402d5c35efd9",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1edk5d3KDogvc7lp",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/services/explore.js",
+      "project": "d2v6_Ghost",
+      "line": 84,
+      "hash": "2bcb2665701c4556e46ae5f335ff1c64",
+      "textRange": {
+        "startLine": 84,
+        "endLine": 84,
+        "startOffset": 8,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "aileencgn@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2023-08-09T12:03:13+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hPI5d3KDogvc8iA",
+      "rule": "Web:S5725",
+      "severity": "MINOR",
+      "component": "d2v6_Ghost:apps/signup-form/preview.html",
+      "project": "d2v6_Ghost",
+      "line": 101,
+      "hash": "ea02e39fa43dc914db8a9250c86fa57d",
+      "textRange": {
+        "startLine": 101,
+        "endLine": 109,
+        "startOffset": 12,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure not using resource integrity feature is safe here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "simon@ghost.org",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2023-06-09T08:26:05+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hPI5d3KDogvc8h7",
+      "rule": "Web:S5725",
+      "severity": "MINOR",
+      "component": "d2v6_Ghost:apps/signup-form/preview.html",
+      "project": "d2v6_Ghost",
+      "line": 22,
+      "hash": "ea02e39fa43dc914db8a9250c86fa57d",
+      "textRange": {
+        "startLine": 22,
+        "endLine": 33,
+        "startOffset": 12,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure not using resource integrity feature is safe here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "simon@ghost.org",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2023-06-08T11:23:38+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hPI5d3KDogvc8h8",
+      "rule": "Web:S5725",
+      "severity": "MINOR",
+      "component": "d2v6_Ghost:apps/signup-form/preview.html",
+      "project": "d2v6_Ghost",
+      "line": 39,
+      "hash": "ea02e39fa43dc914db8a9250c86fa57d",
+      "textRange": {
+        "startLine": 39,
+        "endLine": 49,
+        "startOffset": 12,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure not using resource integrity feature is safe here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "simon@ghost.org",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2023-06-08T11:23:38+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hPI5d3KDogvc8h_",
+      "rule": "Web:S5725",
+      "severity": "MINOR",
+      "component": "d2v6_Ghost:apps/signup-form/preview.html",
+      "project": "d2v6_Ghost",
+      "line": 83,
+      "hash": "ea02e39fa43dc914db8a9250c86fa57d",
+      "textRange": {
+        "startLine": 83,
+        "endLine": 95,
+        "startOffset": 12,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure not using resource integrity feature is safe here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "simon@ghost.org",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2023-06-08T11:23:38+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hPI5d3KDogvc8h9",
+      "rule": "Web:S5725",
+      "severity": "MINOR",
+      "component": "d2v6_Ghost:apps/signup-form/preview.html",
+      "project": "d2v6_Ghost",
+      "line": 56,
+      "hash": "ea02e39fa43dc914db8a9250c86fa57d",
+      "textRange": {
+        "startLine": 56,
+        "endLine": 63,
+        "startOffset": 12,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure not using resource integrity feature is safe here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "simon@ghost.org",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2023-06-02T11:59:49+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hPI5d3KDogvc8h-",
+      "rule": "Web:S5725",
+      "severity": "MINOR",
+      "component": "d2v6_Ghost:apps/signup-form/preview.html",
+      "project": "d2v6_Ghost",
+      "line": 71,
+      "hash": "ea02e39fa43dc914db8a9250c86fa57d",
+      "textRange": {
+        "startLine": 71,
+        "endLine": 76,
+        "startOffset": 12,
+        "endOffset": 13
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make sure not using resource integrity feature is safe here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "simon@ghost.org",
+      "tags": [
+        "cwe",
+        "former-hotspot"
+      ],
+      "creationDate": "2023-06-02T11:59:49+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fAQ5d3KDogvc7zJ",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/components/gh-billing-iframe.js",
+      "project": "d2v6_Ghost",
+      "line": 75,
+      "hash": "11e6c5091d3ce990a064c77c12060d11",
+      "textRange": {
+        "startLine": 75,
+        "endLine": 75,
+        "startOffset": 12,
+        "endOffset": 69
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "kevin@ghost.org",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2022-12-06T15:20:57+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eyE5d3KDogvc7tr",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/components/gh-explore-iframe.js",
+      "project": "d2v6_Ghost",
+      "line": 68,
+      "hash": "bcfbf5e5795d69e8c799b5809c4b3e1e",
+      "textRange": {
+        "startLine": 68,
+        "endLine": 68,
+        "startOffset": 8,
+        "endOffset": 65
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "aileencgn@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2022-10-07T13:32:54+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1edk5d3KDogvc7lj",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/services/explore.js",
+      "project": "d2v6_Ghost",
+      "line": 48,
+      "hash": "edc5246e43d339f87aa1a922c19b3541",
+      "textRange": {
+        "startLine": 48,
+        "endLine": 48,
+        "startOffset": 12,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Verify the origin of the received message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "aileencgn@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2022-10-07T13:32:54+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1edk5d3KDogvc7lo",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/services/explore.js",
+      "project": "d2v6_Ghost",
+      "line": 77,
+      "hash": "2bcb2665701c4556e46ae5f335ff1c64",
+      "textRange": {
+        "startLine": 77,
+        "endLine": 77,
+        "startOffset": 8,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "aileencgn@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2022-10-07T13:32:54+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1cPS5d3KDogvc6tf",
+      "rule": "jssecurity:S5146",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/core/frontend/web/middleware/handle-image-sizes.js",
+      "project": "d2v6_Ghost",
+      "line": 51,
+      "hash": "a391105100c53a09fadc25ce3cb0afca",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 19,
+        "endOffset": 27
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/web/middleware/handle-image-sizes.js",
+              "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 19,
+                "endOffset": 27
+              },
+              "msg": "Sink: this invocation is not safe; a malicious value can be used as argument"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/web/middleware/handle-image-sizes.js",
+              "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 28,
+                "endOffset": 31
+              },
+              "msg": "A malicious value was previously assigned to field ‘url’"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/web/middleware/handle-image-sizes.js",
+              "textRange": {
+                "startLine": 45,
+                "endLine": 45,
+                "startOffset": 12,
+                "endOffset": 15
+              },
+              "msg": "A malicious value can be assigned to field ‘url’"
+            },
+            {
+              "component": "d2v6_Ghost:ghost/core/core/frontend/web/middleware/handle-image-sizes.js",
+              "textRange": {
+                "startLine": 45,
+                "endLine": 45,
+                "startOffset": 22,
+                "endOffset": 33
+              },
+              "msg": "Source: a user can craft an HTTP request with malicious content"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Change this code to not perform redirects based on user-controlled data.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "simon@ghost.org",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2022-05-27T14:36:53+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dBB5d3KDogvc65A",
+      "rule": "javascript:S6437",
+      "severity": "BLOCKER",
+      "component": "d2v6_Ghost:ghost/core/test/unit/server/services/members/members-api/services/token-service.test.js",
+      "project": "d2v6_Ghost",
+      "line": 62,
+      "hash": "68a597488ae97e72ec6cd894dfc8aca9",
+      "textRange": {
+        "startLine": 62,
+        "endLine": 62,
+        "startOffset": 33,
+        "endOffset": 43
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/test/unit/server/services/members/members-api/services/token-service.test.js",
+              "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 26,
+                "endOffset": 284
+              },
+              "msg": "Hardcoded value assigned here"
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Revoke and change this password, as it is compromised.",
+      "effort": "1h",
+      "debt": "1h",
+      "author": "nazargargol@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2022-05-23T09:59:33+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "BLOCKER"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fAQ5d3KDogvc7zI",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/components/gh-billing-iframe.js",
+      "project": "d2v6_Ghost",
+      "line": 61,
+      "hash": "11e6c5091d3ce990a064c77c12060d11",
+      "textRange": {
+        "startLine": 61,
+        "endLine": 61,
+        "startOffset": 12,
+        "endOffset": 69
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "aileencgn@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2021-10-22T10:29:55+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1fAQ5d3KDogvc7zK",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/components/gh-billing-iframe.js",
+      "project": "d2v6_Ghost",
+      "line": 101,
+      "hash": "11e6c5091d3ce990a064c77c12060d11",
+      "textRange": {
+        "startLine": 101,
+        "endLine": 101,
+        "startOffset": 8,
+        "endOffset": 65
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "aileencgn@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2021-10-22T10:29:55+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eg95d3KDogvc7md",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/services/billing.js",
+      "project": "d2v6_Ghost",
+      "line": 89,
+      "hash": "3dfbe2899e8e4df1de5053c33227ce20",
+      "textRange": {
+        "startLine": 89,
+        "endLine": 89,
+        "startOffset": 16,
+        "endOffset": 65
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "aileencgn@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2021-09-30T13:00:32+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hZ-5d3KDogvc8sD",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:apps/portal/src/app.js",
+      "project": "d2v6_Ghost",
+      "line": 151,
+      "hash": "935483301e5737e8c3cc049fb74b2831",
+      "textRange": {
+        "startLine": 151,
+        "endLine": 151,
+        "startOffset": 12,
+        "endOffset": 37
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "zrishabhgarg@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2021-05-27T12:22:32+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1hXk5d3KDogvc8qP",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:apps/portal/src/components/popup-modal.js",
+      "project": "d2v6_Ghost",
+      "line": 85,
+      "hash": "935483301e5737e8c3cc049fb74b2831",
+      "textRange": {
+        "startLine": 85,
+        "endLine": 85,
+        "startOffset": 16,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Specify a target origin for this message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "zrishabhgarg@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2021-05-27T12:22:32+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1eg95d3KDogvc7mT",
+      "rule": "javascript:S2819",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/admin/app/services/billing.js",
+      "project": "d2v6_Ghost",
+      "line": 24,
+      "hash": "edc5246e43d339f87aa1a922c19b3541",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 12,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Verify the origin of the received message.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "nazargargol@gmail.com",
+      "tags": [
+        "cwe",
+        "html5",
+        "type-dependent"
+      ],
+      "creationDate": "2020-05-22T02:44:37+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dFB5d3KDogvc659",
+      "rule": "javascript:S5659",
+      "severity": "CRITICAL",
+      "component": "d2v6_Ghost:ghost/core/test/unit/server/services/auth/members/index.test.js",
+      "project": "d2v6_Ghost",
+      "line": 56,
+      "hash": "abf1f48659a2dbf41ef58446f4587fd3",
+      "textRange": {
+        "startLine": 56,
+        "endLine": 56,
+        "startOffset": 30,
+        "endOffset": 38
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "d2v6_Ghost:ghost/core/test/unit/server/services/auth/members/index.test.js",
+              "textRange": {
+                "startLine": 56,
+                "endLine": 58,
+                "startOffset": 53,
+                "endOffset": 17
+              },
+              "msg": "The \"algorithms\" option should be defined and should not contain 'none'."
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Use only strong cipher algorithms when signing this JWT.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe",
+        "privacy"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dyF5d3KDogvc7at",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/api.js",
+      "project": "d2v6_Ghost",
+      "line": 99,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 99,
+        "endLine": 99,
+        "startOffset": 26,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Tp",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 641,
+      "hash": "b8b2cf2fe261fc2293d17b277d5296b7",
+      "textRange": {
+        "startLine": 641,
+        "endLine": 641,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Tq",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 652,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 652,
+        "endLine": 652,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Tr",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 660,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 660,
+        "endLine": 660,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Ts",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 668,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 668,
+        "endLine": 668,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Tt",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 676,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 676,
+        "endLine": 676,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Tu",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 684,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 684,
+        "endLine": 684,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Tv",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 692,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 692,
+        "endLine": 692,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Tw",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 700,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 700,
+        "endLine": 700,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvh5d3KDogvc7Tx",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 708,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 708,
+        "endLine": 708,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvi5d3KDogvc7ZQ",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 1859,
+      "hash": "b8b2cf2fe261fc2293d17b277d5296b7",
+      "textRange": {
+        "startLine": 1859,
+        "endLine": 1859,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvi5d3KDogvc7ZS",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 1891,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 1891,
+        "endLine": 1891,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    },
+    {
+      "key": "AZ3Z1dvi5d3KDogvc7Zn",
+      "rule": "javascript:S2068",
+      "severity": "MAJOR",
+      "component": "d2v6_Ghost:ghost/core/test/utils/fixtures/data-generator.js",
+      "project": "d2v6_Ghost",
+      "line": 2853,
+      "hash": "889065d5218018277558b13371f103bc",
+      "textRange": {
+        "startLine": 2853,
+        "endLine": 2853,
+        "startOffset": 22,
+        "endOffset": 35
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Review this potentially hard-coded password.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "erisds@gmail.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2020-03-30T15:26:47+0000",
+      "updateDate": "2026-04-29T15:12:42+0000",
+      "type": "VULNERABILITY",
+      "organization": "d2v6",
+      "cleanCodeAttribute": "TRUSTWORTHY",
+      "cleanCodeAttributeCategory": "RESPONSIBLE",
+      "impacts": [
+        {
+          "softwareQuality": "SECURITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN",
+      "projectName": "Ghost",
+      "internalTags": [],
+      "lastChangeAnalysisUuid": "30c84224-763f-4087-8f7f-34084af285b3",
+      "lastChangeSource": "ANALYSIS"
+    }
+  ]
+}
